@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador</title>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 
 </head>
+
 <body>
-    
+    <h1>Wash Effect</h1>
+    <p>Selecciona el tamaño de tu vehículo para conocer el precio:</p>
+
+    <select id="vehiculo">
+        <option value="pequeño">Auto Pequeño</option>
+        <option value="mediano">Auto Mediano</option>
+        <option value="grande">Auto Grande</option>
+    </select>
+
+    <button onclick="mostrarPrecio()">Ver Precio</button>
+
+    <p id="precio"></p>
+
+    <h2>Servicios Adicionales</h2>
+    <p>Selecciona servicios extra para tu vehículo:</p>
+    <ul id="servicios-lista"></ul>
+
+    <button onclick="mostrarServicios()">Ver Servicios</button>
+
 </body>
+
 </html>
